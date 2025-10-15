@@ -1,0 +1,15 @@
+{
+  "name": "task_tracker_cli",
+  "version": "1.0.0",
+  "description": "simple command line interface (CLI) to track what you need to do, what you have done, and what you are currently working on",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "keywords": [],
+  "author": "Juan Jimenez",
+  "license": "ISC",
+  "type": "module"
+}
