@@ -39,3 +39,6 @@ desktop.ini
 # Dependencias temporales
 .tmp/
 .cache/
+
+# TestFiles
+pruebas.js

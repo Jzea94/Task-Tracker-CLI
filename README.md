@@ -54,7 +54,7 @@ Cada tarea debe tener las siguientes propiedades:
 
 - `id:` Un identificador único para la tarea. 
 - `description:` Una breve descripción de la tarea. 
-- `status:` El estado de la tarea (, , todoin-progressdone). 
+- `status:` El estado de la tarea (todo, in-progress, done). 
 - `createdAt:` La fecha y hora en que se creó la tarea. 
 - `updatedAt:` La fecha y hora en que se actualizó por última vez la tarea. 
 

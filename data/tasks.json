@@ -1,0 +1,18 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "description": " prueba",
+      "status": "todo",
+      "createdAt": "Friday, October 24, 2025 at 06:05 AM",
+      "updatedAt": "Friday, October 24, 2025 at 06:05 AM"
+    },
+    {
+      "id": 1,
+      "description": " tarea de prueba",
+      "status": "todo",
+      "createdAt": "Friday, October 24, 2025 at 06:37 AM",
+      "updatedAt": "Friday, October 24, 2025 at 06:37 AM"
+    }
+  ]
+}
