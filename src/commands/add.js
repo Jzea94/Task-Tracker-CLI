@@ -9,7 +9,7 @@ const validateArgs = ( args ) => {
 
   let description = '';
 
-  for (const arg of args) description = description.concat(` ${arg}`);
+  for (const arg of args) description = description.concat(` ${arg}`).trim();
 
   if ( !description || description.trim().length === 0 ) {
     description = false;
@@ -22,11 +22,11 @@ const validateArgs = ( args ) => {
 export default {
   contract: 'task-cli add [description]',
   info: 'to add a new Task',
-  run: async ( args ) => {
+  run: ( args ) => {
 
     const description = validateArgs(args);
     if ( !description ) return;
 
-    await addNewTask(description);
+    addNewTask(description);
   }
 };

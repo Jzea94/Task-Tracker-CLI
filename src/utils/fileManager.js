@@ -1,15 +1,17 @@
-import { readFile, writeFile } from 'fs/promises'
+// import { readFile, writeFile } from 'fs/promises'
+import { readFileSync, writeFileSync } from 'fs';
 import { resolve, join  } from 'path';
 
 const dirPath = resolve('data');
 const filePath = join(dirPath,'tasks.json');
 
+
 export const tasksManager = () => {
 
-  const readData = async () => {
+  const readData = () => {
     try {
-      const content = await readFile(filePath, 'utf-8');
-      const data = JSON.parse(content, null, 2);
+      const content = readFileSync(filePath, 'utf-8');
+      const data = JSON.parse(content, null, 2);      
 
       if (typeof data !== 'object' || data === null ) {
         throw new Error('Invalid JSON structure');
@@ -19,8 +21,8 @@ export const tasksManager = () => {
     } catch (err) {
       if (err.code === 'ENOENT') {
         // Si el archivo no existe, lo crea vacío
-        console.warn(`⚠️  File not found: ${filePath}.\n\nCreating new tasks.json...`);
-        await writeFile(filePath, JSON.stringify({ tasks: [] }, null, 2));
+        console.warn(`⚠️  File not found: ${filePath}.\nCreating new tasks.json...`);
+        writeFileSync(filePath, JSON.stringify({ tasks: [] }, null, 2));
         return { tasks: [] };
       }
 
@@ -34,7 +36,7 @@ export const tasksManager = () => {
    * @param {String} data 
    */
   const writeData = ( data ) => {
-    writeFile(filePath, data);
+    writeFileSync(filePath, data);
     console.log('✅ Task added successfully.');
   };
 

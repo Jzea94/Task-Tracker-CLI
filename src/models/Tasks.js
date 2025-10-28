@@ -1,10 +1,10 @@
-import { setDate } from "../utils/helpers.js"
+import { setDate, setId } from "../utils/helpers.js"
 
 // TODO: id incremental usando 
 
 export class Task {
-  constructor ({id, description, status, createdAt, updatedAt}) {
-    this.id = 1,
+  constructor ({ description }) {
+    this.id = setId();
     this.description = description,
     this.status = 'todo',
     this.createdAt = setDate();

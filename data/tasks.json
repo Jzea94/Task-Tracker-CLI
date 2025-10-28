@@ -2,17 +2,10 @@
   "tasks": [
     {
       "id": 1,
-      "description": " prueba",
+      "description": "Revisar und 2 del beer Jhonston",
       "status": "todo",
-      "createdAt": "Friday, October 24, 2025 at 06:05 AM",
-      "updatedAt": "Friday, October 24, 2025 at 06:05 AM"
-    },
-    {
-      "id": 1,
-      "description": " tarea de prueba",
-      "status": "todo",
-      "createdAt": "Friday, October 24, 2025 at 06:37 AM",
-      "updatedAt": "Friday, October 24, 2025 at 06:37 AM"
+      "createdAt": "Tuesday, October 28, 2025 at 12:04 AM",
+      "updatedAt": "Tuesday, October 28, 2025 at 12:04 AM"
     }
   ]
 }
