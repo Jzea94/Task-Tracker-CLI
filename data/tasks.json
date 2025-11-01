@@ -6,6 +6,20 @@
       "status": "todo",
       "createdAt": "Tuesday, October 28, 2025 at 12:04 AM",
       "updatedAt": "Tuesday, October 28, 2025 at 12:04 AM"
+    },
+    {
+      "id": 2,
+      "description": "hola desde linux xfce",
+      "status": "todo",
+      "createdAt": "Saturday, November 1, 2025 at 03:44 AM",
+      "updatedAt": "Saturday, November 1, 2025 at 03:44 AM"
+    },
+    {
+      "id": 3,
+      "description": "estudiar matematicas",
+      "status": "todo",
+      "createdAt": "Saturday, November 1, 2025 at 03:57 AM",
+      "updatedAt": "Saturday, November 1, 2025 at 03:57 AM"
     }
   ]
 }

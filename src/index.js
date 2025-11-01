@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { router } from './router.js'
 
+
 (async () => {
   const raw = process.argv.slice(2);
   if (raw.length === 0) {
